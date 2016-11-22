@@ -1,0 +1,109 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="ICG.Modules.SimpleFileList" type="Module" version="02.05.00">
+      <friendlyName>Simple File List Module</friendlyName>
+      <description>A simple file listing module for DotNetNuke installations.  Select a folder path and see all files.</description>
+      <owner>
+        <name>Mitchel Sellers</name>
+        <organization>IowaComputerGurus Inc.</organization>
+        <url>http://www.iowacomputergurus.com</url>
+        <email>webmaster@iowacomputergurus.com</email>
+      </owner>
+      <license>
+          <![CDATA[ 
+        <p><strong>
+        Copyright (c) 2006 - 2016 IowaComputerGurus Inc
+        All rights reserved.</strong>
+        </p>
+        <p>
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+         TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+         THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+         CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+         DEALINGS IN THE SOFTWARE.
+        </p>]]>
+      </license>
+      <releaseNotes>
+        <![CDATA[
+          <h3>Version 02.05.00 - August 26th, 2014<h3>
+          
+          <p>The following items were included in this release.</p>
+          
+          <ul>
+            <li>9418 - Ability to sort results</li>
+            <li>9419/9420 - Cleanup development side of code</li>
+          </ul>
+        
+          <h3>Version 02.00.00 - July 2nd, 2011</h3>
+          
+          <p>The following items were included in this release.</p>
+          
+          <ul>
+            <li>FDM-126 - Added ability for users to specify the "Exclude" file filter.</li>
+            <li>FDM-133 - Localize all static text</li>
+            <li>FDM-134 - Addition of .resources to default excluded file types</li>
+          </ul>
+          
+          <p>
+            For information on previous releases please visit the 
+            <a href="http://www.iowacomputergurus.com/free-products/dotnetnuke-modules/simple-file-list.aspx" target="_blank">Simple File List</a> 
+            Information Page</p>
+        ]]>
+      </releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules\ICGSimpleFileList</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>Simple File List</moduleName>
+            <foldername>ICGSimpleFileList</foldername>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Simple File List</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/ICGSimpleFileList/View.ascx</controlSrc>
+                    <supportsPartialRendering>true</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/ICGSimpleFileList/Settings.ascx</controlSrc>
+                    <controlTitle>Simple File List Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <path>bin</path>
+              <name>ICG.Modules.SimpleFileList.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
