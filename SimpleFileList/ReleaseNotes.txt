@@ -1,0 +1,26 @@
+<h1>Release Notes</h1>
+ <h3>Version 02.05.00 - August 26th, 2014<h3>
+          
+          <p>The following items were included in this release.</p>
+          
+          <ul>
+            <li>9418 - Ability to sort results</li>
+            <li>9419/9420 - Cleanup development side of code</li>
+          </ul>
+        
+          <h3>Version 02.00.00 - July 2nd, 2011</h3>
+          
+          <p>The following items were included in this release.</p>
+          
+          <ul>
+            <li>FDM-126 - Added ability for users to specify the "Exclude" file filter.</li>
+            <li>FDM-133 - Localize all static text</li>
+            <li>FDM-134 - Addition of .resources to default excluded file types</li>
+          </ul>
+          
+          <p>
+            For information on previous releases please visit the 
+            <a href="http://www.iowacomputergurus.com/free-products/dotnetnuke-modules/simple-file-list.aspx" target="_blank">Simple File List</a> 
+            Information Page</p>
+<h2>v1.0.0</h2>
+<p>Intitial Release.</p>

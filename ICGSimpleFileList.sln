@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICGSimpleFileList", "SimpleFileList\ICGSimpleFileList.csproj", "{1C5104BC-DAD6-4889-84E2-1F1DFF06E5D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI Support", "CI Support", "{483B1F47-981D-430E-8BB5-F630AB8D18D9}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C5104BC-DAD6-4889-84E2-1F1DFF06E5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C5104BC-DAD6-4889-84E2-1F1DFF06E5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C5104BC-DAD6-4889-84E2-1F1DFF06E5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C5104BC-DAD6-4889-84E2-1F1DFF06E5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

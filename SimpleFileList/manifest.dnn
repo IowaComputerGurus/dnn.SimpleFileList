@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <!--        
+      
+    For guidance regarding the format of this manifest file, please see http://www.dnnsoftware.com/wiki/Page/Manifests
+  
+    -->
+    <package name="ICG.Modules.SimpleFileList" type="Module" version="0.0.0">
+      <friendlyName>Simple File List Module</friendlyName>
+      <description>A simple file listing module for DotNetNuke installations.  Select a folder path and see all files.</description>
+      <owner>
+        <name>Mitchel Sellers</name>
+        <organization>IowaComputerGurus Inc.</organization>
+        <url>http://www.iowacomputergurus.com</url>
+        <email>webmaster@iowacomputergurus.com</email>
+      </owner>
+      <license src="License.lic">
+      </license>
+      <releaseNotes src="ReleaseNotes.txt">
+      </releaseNotes>
+      <dependencies>
+        <!--Example dependencies-->
+        <!--<dependency type="CoreVersion">05.04.01</dependency>-->
+        <!--<dependency type="package">SomeOtherPackage</dependency>-->
+      </dependencies>
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>Simple File List</moduleName>
+            <foldername>ICGSimpleFileList</foldername>
+            <businessControllerClass />
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Simple File List</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/ICGSimpleFileList/View.ascx</controlSrc>
+                    <supportsPartialRendering>true</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/ICGSimpleFileList/Settings.ascx</controlSrc>
+                    <controlTitle>Simple File List Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                  </moduleControl>
+                </moduleControls>
+                <permissions>
+                </permissions>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>ICG.Modules.SimpleFileList.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/ICGSimpleFileList</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+
+    <!--example skin-->
+    <!--<package name="MySkin" type="Skin" version="5.0.6">
+      <friendlyName>My Fantastic Skin</friendlyName>
+      <description>My Fantastic Skin</description>
+      <owner>
+        <name>Joe Bloggs</name>
+        <organization>Some Org</organization>
+        <url>http://www.someurl.com</url>
+        <email><![CDATA[<a href="mailto:joebloggs@someorg.com">joebloggs@someorg.com</a>]]></email>
+      </owner>
+      <license src="License.lic"></license>
+      <releaseNotes></releaseNotes>
+      <components>
+        <component type="Skin">
+          <skinFiles>
+            <skinName>MySkin</skinName>
+            <basePath>Portals\_default\Skins\MySkin</basePath>
+          </skinFiles>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>MySkin.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Portals\_default\Skins\MySkin</basePath>
+            <resourceFile>
+              <name>resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>-->
+
+  </packages>
+</dotnetnuke>
