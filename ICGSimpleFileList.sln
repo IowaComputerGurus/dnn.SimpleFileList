@@ -1,12 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICGSimpleFileList", "SimpleFileList\ICGSimpleFileList.csproj", "{1C5104BC-DAD6-4889-84E2-1F1DFF06E5D8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI Support", "CI Support", "{483B1F47-981D-430E-8BB5-F630AB8D18D9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{D7E2BCA8-4277-47D9-BD9E-326237FB1950}"
 	ProjectSection(SolutionItems) = preProject
-		appveyor.yml = appveyor.yml
+		SolutionInfo.cs = SolutionInfo.cs
 	EndProjectSection
 EndProject
 Global
@@ -22,5 +22,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51A76A54-0238-459E-9845-C06C2F15CB86}
 	EndGlobalSection
 EndGlobal

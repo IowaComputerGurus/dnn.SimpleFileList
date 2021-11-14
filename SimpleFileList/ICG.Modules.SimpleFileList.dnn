@@ -12,7 +12,7 @@
       <license>
           <![CDATA[ 
         <p><strong>
-        Copyright (c) 2006 - 2018 IowaComputerGurus Inc
+        Copyright (c) 2006 - 2021 IowaComputerGurus Inc
         All rights reserved.</strong>
         </p>
         <p>
@@ -51,7 +51,7 @@
         ]]>
       </releaseNotes>
       <dependencies>
-        <dependency type="CoreVersion">07.00.00</dependency>
+        <dependency type="CoreVersion">09.04.00</dependency>
       </dependencies>
       <components>
         <component type="ResourceFile">
