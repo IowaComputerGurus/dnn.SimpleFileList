@@ -1,0 +1,56 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    name: Build and Publish
+    env:
+      solution-path: './ICGSimpleFileList.sln'
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    
+    - name: Install GitVersion
+      run: dotnet tool install --global GitVersion.Tool
+
+    - name: Determine Version
+      id: gitversion
+      uses: gittools/actions/gitversion/execute@v0.9.7
+      with:
+        useConfigFile: true 
+
+    # https://github.com/valadas/set-dnn-manifest-versions
+    - name: Update Versions on DNN Modules
+      uses: valadas/set-dnn-manifest-versions@v1
+      with:
+        version: ${{ steps.gitversion.outputs.majorMinorPatch }}
+        includeSolutionInfo: true
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
+    
+    - name: Restore NuGet Packages
+      run: nuget restore "${{ env.solution-path }}"
+    
+    - name: Build the solution
+      run: msbuild "${{ env.solution-path }}" /p:Configuration=Release;
+    
+    - name: Store Install Package
+      if: github.event_name != 'pull_request'
+      uses: actions/upload-artifact@v2
+      with:
+        name: installers
+        path: '**/**_install.zip'
+        retention-days: 5 # only need long enough to test/validate
+    
+    
+    
+    
